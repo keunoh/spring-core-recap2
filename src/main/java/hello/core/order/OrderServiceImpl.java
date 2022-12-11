@@ -14,10 +14,10 @@ public class OrderServiceImpl implements OrderService {
     private final DiscountPolicy discountPolicy;
 
 
+
     //생성자가 딱! 1개일 경우에는 @Autowired를 생략할 수 있음
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        System.out.println("memberRepository = " + memberRepository);
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
